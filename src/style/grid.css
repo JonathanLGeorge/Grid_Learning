@@ -16,6 +16,86 @@ body {
   gap: 30px;
 }
 
+.challenge-1 {
+  margin: 30px auto;
+  background-color: lightblue;
+  width: 800px;
+  height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr 4fr 1fr;
+      grid-template-rows: 1fr 2fr 4fr 1fr;
+  -ms-grid-columns: (1fr)[3] 2fr;
+      grid-template-columns: repeat(3, 1fr) 2fr;
+  gap: 15px;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  background-color: red;
+}
+
+.box-1 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: red;
+}
+
+.box-2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: red;
+}
+
+.box-3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-color: red;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background-color: red;
+}
+
+.main_content {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  background-color: red;
+}
+
+.footer {
+  grid-row: 4/-1;
+  grid-column: 1/-1;
+  background-color: red;
+}
+
 .item {
   padding: 20px;
   font-size: 30px;
