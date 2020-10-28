@@ -3,7 +3,7 @@ import Practice from "./testingGrid/Practice";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Practice />
     </div>
   );

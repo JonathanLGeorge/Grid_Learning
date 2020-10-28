@@ -1,16 +1,20 @@
+body {
+  margin: 0;
+}
 .container {
-  background-color: #eee;
-  width: 100px;
+  background-color: gray;
+  width: 1000px;
   margin: 30px auto;
-
+  height: 1000px;
   display: grid;
   //we want 6 elements to be divided by 2 rows and 3 columns
   //2x3 = 6
   //we want 2 rows so we first define the height of our rows
-  grid-template-rows: 150px 150px;
-  //we do the same for columns
-  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 1fr;
 
+  //we do the same for columns, we can use repeat if all will be same size
+  //grid-template-columns: repeat(2, 150px) 1fr; //fr is fraction. 1fr = 100%
+  grid-template-columns: repeat(3, 1fr);
   //grid-row-gap and grid-column-gap have been replaced
   //row-gap: 30px;
   //column-gap: 30px;
@@ -26,21 +30,28 @@
   color: white;
 
   &--1 {
-    background-color: orange;
+    background-color: orangered;
+    //this is the same as grid-row-start: 2; and grid-ow-end: 3;
+    grid-row: 2/3;
+    grid-column: 2/3;
   }
   &--2 {
     background-color: Green;
   }
   &--3 {
-    background-color: violet;
+    background-color: purple;
   }
   &--4 {
     background-color: pink;
   }
   &--5 {
     background-color: blue;
+    grid-row: 1/2;
+    grid-column: 3/4;
   }
   &--6 {
-    background-color: brown;
+    background-color: goldenrod;
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 }
