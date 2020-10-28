@@ -1,0 +1,46 @@
+.container {
+  background-color: #eee;
+  width: 100px;
+  margin: 30px auto;
+
+  display: grid;
+  //we want 6 elements to be divided by 2 rows and 3 columns
+  //2x3 = 6
+  //we want 2 rows so we first define the height of our rows
+  grid-template-rows: 150px 150px;
+  //we do the same for columns
+  grid-template-columns: 150px 150px 150px;
+
+  //grid-row-gap and grid-column-gap have been replaced
+  //row-gap: 30px;
+  //column-gap: 30px;
+
+  //gap can be used to define both column and row gap
+  gap: 30px;
+}
+
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+
+  &--1 {
+    background-color: orange;
+  }
+  &--2 {
+    background-color: Green;
+  }
+  &--3 {
+    background-color: violet;
+  }
+  &--4 {
+    background-color: pink;
+  }
+  &--5 {
+    background-color: blue;
+  }
+  &--6 {
+    background-color: brown;
+  }
+}
