@@ -1,13 +1,11 @@
-import "./App.css";
-import Challenge1 from "./testingGrid/Callenge1";
-
-import Practice from "./testingGrid/Practice";
-
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import "./sass/main.css";
 function App() {
   return (
-    <div>
-      <Practice />
-      <Challenge1 />
+    <div className="container">
+      <Header />
+      <Footer />
     </div>
   );
 }
