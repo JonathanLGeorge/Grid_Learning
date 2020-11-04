@@ -78,18 +78,18 @@ set up a container
 put items inside the container
 justify-content(the items) to align them how you want inside the container
 example:
-justify-content: center/end/start/space-between/space-around/space-evenly;
+justify-content: center/end/start/space-between/space-around/space-evenly
 
 align-content is for vertically aligning our content(items)
 examples:
 
-align-content: center/end/start/space-between/space-around/space-evenly;
+align-content: center/end/start/space-between/space-around/space-evenly
 
 align-item and justify-item are used for individal items
 content aligns the entire track
 align always means vertical column axis
 justify means horizonatal row axis
-===================================================
+
 
 when assigning template structure
 we can use grid keywords like max-content
